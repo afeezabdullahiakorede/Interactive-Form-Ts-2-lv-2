@@ -1,0 +1,88 @@
+/* 1. Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* 2. Form Container */
+#registrationForm {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* 3. Label and Input Styling */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important: keeps padding inside the width */
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+/* 4. Focus State (UX Objective) */
+input:focus {
+    border-color: #fbc02d; /* Matching your brand yellow */
+    outline: none;
+    box-shadow: 0 0 8px rgba(251, 192, 45, 0.2);
+    background-color: #fffefb;
+}
+
+/* 5. Error Message Styling */
+.error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: block;
+    height: 1rem; /* Keeps layout stable even without error text */
+    margin-bottom: 10px;
+}
+
+/* 6. Submit Button */
+#submitBtn {
+    width: 100%;
+    background-color: #fbc02d;
+    color: #1a1a1a;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+#submitBtn:hover {
+    background-color: #f9a825;
+}
+
+#submitBtn:active {
+    transform: scale(0.98);
+}

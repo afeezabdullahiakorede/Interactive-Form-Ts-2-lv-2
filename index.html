@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title> 
+
+     <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <h1>Interactive Form</h1>
+    <!--<form action = "submit_form.php" method = "post">-->
+    <form id="registrationForm">
+        <label for = "fullname">Full Name:</label>
+        <input type = "text" id = "fullname" name = "fullname" required placeholder="Enter your full name">
+        <span class="error" id="fullnameError"></span>
+
+        <label for = "email">Email:</label>
+        <input type = "email" id = "email" name = "email" required placeholder="Enter your email">
+        <span class="error" id="emailError"></span>
+
+        <label for = "phone-number">Phone Number:</label>
+        <input type = "tel" id = "phone-number" name = "phone-number" required placeholder="Enter your phone number" minlength="7" maxlength="12">
+        <span class="error" id="phone-numberError"></span>
+
+        <label for = "password">Password:</label>
+        <input type = "password" id = "password" name = "password" required placeholder="Enter your password" minlength="8">
+        <span class="error" id="passwordError"></span>
+
+        <button type = "submit" id="submitBtn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
